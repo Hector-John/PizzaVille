@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaVille</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/781946605d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/hero-pizza.png" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Itim&family=Lato:wght@300;400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- -----NAVBAR----- -->
+      <nav class="navbar container">
+        <div>
+          <a href="/">
+            <img src="assets/plogo2.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <div>
+          <ul class="Links">
+            <li><a href="#" class="links">Menu</a></li>
+            <li><a href="#" class="links">Order</a></li>
+            <li><a href="#" class="links">Restaurants</a></li>
+            <li><a href="#" class="links">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="searchDiv">
+          <div class="search">
+            <input
+              type="text"
+              class="searchBox"
+              placeholder="Search restaurants, Cuisine...."
+            />
+            <button class="searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </nav>
+
+      <!-- -----HERO---- -->
+      <section id="heroSection">
+        <div class="left">
+          <h1>Perfection in every bite</h1>
+          <p>
+            Indulge in a culinary journey with our delectable pizzas and gourmet
+            delights, crafted to perfection.
+          </p>
+          <div class="search location">
+            <input
+              type="text"
+              class="searchBox"
+              placeholder="Search restaurants, Cuisine...."
+            />
+            <button class="searchBtn locateBtn">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+          </div>
+
+          <div class="cta">
+            <button class="btn">Order Food</button>
+            <p class="or">or</p>
+            <button class="btn transparent">Make Reservation</button>
+          </div>
+        </div>
+
+        <div class="heroRight">
+          <div class="bgElement">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+
+          <div class="foreElement">
+            <img src="assets/hero-pizza.png" class="heroImg" />
+            <img src="assets/hero-burger.png" class="heroImg" />
+            <img src="assets/hero-biryani.png" class="heroImg" />
+
+            <div class="reveiwCard">
+              <div class="reveiwerInfo">
+                <img src="assets/user-5.png" class="reveiwerImg" />
+                <div class="reveiwer">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h2>Laura</h2>
+                </div>
+              </div>
+
+              <div class="reveiwBody">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  PizzaVille reigns supreme as the ultimate pizza joint.
+                  Consistently crispy crusts, fresh toppings, and lightning-fast
+                  delivery keep me coming back for more
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- ------restaurant section -->
+    <section class="restaurant" id="restaurant">
+      <div class="leaf right">
+        <img src="assets/leafs.png" />
+      </div>
+
+      <div class="section">
+        <!-- image container -->
+        <div class="foodImageContainer">
+          <div class="circle">
+            <span></span><span></span><span></span><span></span><span></span
+            ><span></span>
+          </div>
+          <div class="circle">
+            <span></span><span></span><span></span><span></span><span></span
+            ><span></span>
+          </div>
+
+          <div>
+            <img src="assets/food-1.png" class="foodImg" />
+            <img src="assets/food-2.png" class="foodImg" />
+            <img src="assets/food-3.png" class="foodImg" />
+            <img src="assets/food-4.png" class="foodImg" />
+            <img src="assets/food-5.png" class="foodImg" />
+            <img src="assets/food-6.png" class="foodImg" />
+            <img src="assets/food-7.png" class="foodImg" />
+          </div>
+        </div>
+
+        <!-- -----details container -->
+        <div class="detail">
+          <span class="highlight">From a professional chef</span>
+          <p class="title">1000+</p>
+          <p class="info">
+            Dine from our 100+ food and beverages menu. Food for every taste and
+            mood.
+          </p>
+
+          <button class="btn">Order Food</button>
+        </div>
+      </div>
+      <h1 class="seller">Our Best Sellers</h1>
+
+      <div class="restaurantContainer">
+        <div class="restaurants">
+          <p class="discount">35% Off</p>
+          <div class="thumbnail">
+            <img src="assets/restaurant-1.png" class="restaurantImg" alt="" />
+          </div>
+          <div class="restaurantBody">
+            <h3 class="name">Feast-It</h3>
+            <p class="menu">Burgers, Fries, Nuggets</p>
+            <p class="place">CBD</p>
+            <span class="rating"
+              >4.3
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+        <div class="restaurants">
+          <div class="thumbnail">
+            <img src="assets/restaurant-2.png" class="restaurantImg" alt="" />
+          </div>
+          <div class="restaurantBody">
+            <h3 class="name">Hakheem's</h3>
+            <p class="menu">Pizza, Pasta, Spaghetti</p>
+            <p class="place">Compton</p>
+            <span class="rating"
+              >4.9
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+        <div class="restaurants">
+          <p class="discount">50% Off</p>
+          <div class="thumbnail">
+            <img src="assets/restaurant-3.png" class="restaurantImg" alt="" />
+          </div>
+          <div class="restaurantBody">
+            <h3 class="name">Laura's</h3>
+            <p class="menu">Burgers, Fries, Nuggets</p>
+            <p class="place">Parklands</p>
+            <span class="rating"
+              >4.0
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+        <div class="restaurants">
+          <p class="discount">35% Off</p>
+          <div class="thumbnail">
+            <img src="assets/restaurant-4.png" class="restaurantImg" alt="" />
+          </div>
+          <div class="restaurantBody">
+            <h3 class="name">Grace's</h3>
+            <p class="menu">Indian Cuisine</p>
+            <p class="place">Westside</p>
+            <span class="rating"
+              >4.5
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+        <div class="restaurants">
+          <div class="thumbnail">
+            <img src="assets/restaurant-5.png" class="restaurantImg" alt="" />
+          </div>
+          <div class="restaurantBody">
+            <h3 class="name">Bradley's</h3>
+            <p class="menu">Noodles, Chinese Cuisine</p>
+            <p class="place">Leisurefield</p>
+            <span class="rating"
+              >4.1
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+        <div class="restaurants">
+          <p class="discount">15% Off</p>
+          <div class="thumbnail">
+            <img src="assets/restaurant-6.png" class="restaurantImg" alt="" />
+          </div>
+          <div class="restaurantBody">
+            <h3 class="name">Boggoff</h3>
+            <p class="menu">Chicken, Chicken Nuggets</p>
+            <p class="place">Boulivierd</p>
+            <span class="rating"
+              >4.7
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="leaf left">
+        <img src="assets/leafleft.png" />
+      </div>
+    </section>
+
+    <!-- -----about  -->
+    <section class="about" id="about">
+      <div class="left">
+        <div class="circle"></div>
+        <img src="assets/pizza-pan.png" alt="" class="pizzapan" />
+
+        <div class="reveiwContainer grace">
+          <div class="wrapper">
+            <img src="assets/user-2.png" class="reveiwerImg" />
+            <div class="reveiwCard">
+              <div class="reveiwerInfo">
+                <div class="reveiwer">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>5.0</p>
+                  </div>
+                  <h2>Grace</h2>
+                </div>
+              </div>
+              <div class="reveiwBody">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  The flavors at PizzaVille are unparalleled! Their Margherita
+                  pizza is my personal favorite – always fresh and full of
+                  flavor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveiwContainer tareeq">
+          <div class="wrapper">
+            <img src="assets/user-4.png" class="reveiwerImg" />
+            <div class="reveiwCard">
+              <div class="reveiwerInfo">
+                <div class="reveiwer">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h2>Tareeq</h2>
+                </div>
+              </div>
+              <div class="reveiwBody">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  I love PizzaVille! Their unique topping combinations and
+                  perfect crust make for a pizza experience that’s hard to beat.
+               
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveiwContainer daisy">
+          <div class="wrapper">
+            <img src="assets/user-3.png" class="reveiwerImg" />
+            <div class="reveiwCard">
+              <div class="reveiwerInfo">
+                <div class="reveiwer">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>5.0</p>
+                  </div>
+                  <h2>Daisy</h2>
+                </div>
+              </div>
+              <div class="reveiwBody">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  I’ve tried many pizza places, but PizzaVille tops them all.
+                  The ingredients are always fresh, and the service is
+                  impeccable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveiwContainer taishan">
+          <div class="wrapper">
+            <img src="assets/user-1.png" class="reveiwerImg" />
+            <div class="reveiwCard">
+              <div class="reveiwerInfo">
+                <div class="reveiwer">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h2>Taishan</h2>
+                </div>
+              </div>
+              <div class="reveiwBody">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  Fast delivery, hot and tasty pizza every time. PizzaVille
+                  never disappoints with their service or their delicious
+                  pizzas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveiwContainer laura">
+          <div class="wrapper">
+            <img src="assets/user-5.png" class="reveiwerImg" />
+            <div class="reveiwCard">
+              <div class="reveiwerInfo">
+                <div class="reveiwer">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>5.0</p>
+                  </div>
+                  <h2>Laura</h2>
+                </div>
+              </div>
+              <div class="reveiwBody">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  PizzaVille reigns supreme as the ultimate pizza joint.
+                  Consistently crispy crusts, fresh toppings, and lightning-fast
+                  delivery keep me coming back for more.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h1>Why Us?</h1>
+        <p>
+          We serve the best in taste. Our customers are our number one priority.
+          See what others think about us.
+        </p>
+
+        <div class="serviceCard">
+          <div class="card">
+            <div class="image">
+              <img src="assets/fastest-delivery.png" class="cardImg" />
+              <h3>Fastest Delivery</h3>
+            </div>
+            <p class="description">
+              Enjoy piping hot delicacies delivered to your door in record time.
+              Our delivery service is unbeatable.
+            </p>
+          </div>
+        </div>
+        <div class="serviceCard">
+          <div class="card">
+            <div class="image">
+              <img src="assets/best-prices.png" class="cardImg" />
+              <h3>Best Prices</h3>
+            </div>
+            <p class="description">
+              Get the best value for your money with our competitively prices
+              and combo deals.
+            </p>
+          </div>
+        </div>
+        <div class="serviceCard">
+          <div class="card">
+            <div class="image">
+              <img src="assets/20+ restaurant.png" class="cardImg" />
+              <h3>20+ Restaurants</h3>
+            </div>
+            <p class="description">
+              With over 20 locations, you’re never far from a PizzaVille. Find
+              us in your neighborhood today.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------faq------ -->
+    <section class="faqSection" id="faq">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <div class="question">
+          <h3>How do I order?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            To place an order, simply browse our menu, select your items, and
+            add them to your cart. Proceed to checkout, enter your delivery
+            information, choose a payment method, and confirm your order.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>How can I cancel my reservation?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            To cancel your reservation, please contact our customer service at
+            least 24 hours in advance. You can reach us via phone or email.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>How can I change the delivery address after order placement?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            If you need to change your delivery address after placing an order,
+            please contact our support team immediately. Provide your order
+            details and the new address.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>My payment is declining. What should I do?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            If your payment is declining, please check your card details and
+            ensure you have sufficient funds. You can also try a different
+            payment method or contact your bank for further assistance.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>How can I contact my delivery person?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You can contact your delivery person through the contact information
+            provided in your order confirmation email. Alternatively, you can
+            track your order status and contact the delivery person via our app.
+          </p>
+        </div>
+      </div>
+
+      <div class="sushi right">
+        <img src="assets/side-dish.png" alt="" />
+      </div>
+    </section>
+
+    <!-- -----app section---- -->
+    <div class="app">
+      <div class="section">
+        <!-- -----details container -->
+        <div class="detail">
+          <span class="highlight">Download our to stay updated.</span>
+          <p class="title">Make your orders from your phone</p>
+          <p class="info">
+            Our app has extra features including realtime order tracking,
+            account management and so much more
+          </p>
+
+          <div class="btnGroup">
+            <a href="#" class="downloadBtn">
+              <img src="assets/play-store.png" class="android" />
+            </a>
+            <a href="#" class="downloadBtn">
+              <img src="assets/app-store.png" class="ios" />
+            </a>
+          </div>
+        </div>
+
+        <!-- image container -->
+        <div class="imgContainer">
+          <div class="pulse">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+
+          <img src="assets/leafs.png" class="leaf left" alt="" />
+          <img src="assets/leafleft.png" class="leaf right" alt="" />
+
+          <img src="assets/app.png" class="phone" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ----banner--- -->
+    <div class="banner">
+      <div class="bannerContainer">
+        <h1>Get 20% off on your first order</h1>
+        <p>Use this code during checkout</p>
+        <p class="coupon">WELCOME20</p>
+      </div>
+
+      <div class="dishes">
+        <img src="assets/discount-food-slider-1.png" alt="" />
+        <img src="assets/hero-pizza.png" alt="" />
+        <img src="assets/hero-burger.png" alt="" />
+      </div>
+    </div>
+
+    <!-- ----footer -->
+    <footer id="footer">
+      <div class="company">
+        <img src="assets/plogo2.png" class="logo" alt="" />
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="btnGroup">
+          <a href="#" class="downloadBtn">
+            <img src="assets/play-store.png" class="android" />
+          </a>
+          <a href="#" class="downloadBtn">
+            <img src="assets/app-store.png" class="ios" />
+          </a>
+        </div>
+      </div>
+
+      <div class="links useful">
+        <h5>Useful Link</h5>
+        <a href="#">Menu</a>
+        <a href="#">Restaurants</a>
+        <a href="#">My Orders</a>
+        <a href="#">Track Order</a>
+        <a href="#">Support</a>
+      </div>
+
+      <!-- ===information -->
+      <div class="links information">
+        <h5>Information</h5>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">What info we collect ?</a>
+      </div>
+
+      <!-- ---contacts -->
+      <div class="links contact">
+        <h5>Contact Us</h5>
+        <p>Our main restaurant is located on Street 231, KEN</p>
+        <a href="mailto:example@example.com">hakheem67@gmail.com</a>
+        <a href="tel:+1234567890">+00 7694431222</a>
+      </div>
+
+      <div class="payment">
+        <img src="assets/visa.png" alt="" />
+        <img src="assets/master-card.png" alt="" />
+        <img src="assets/mpesa.png" alt="" />
+        <img src="assets/paypal.png" alt="" />
+        <img src="assets/stripe.png" alt="" />
+        <img src="assets/apple-pay.png" alt="" />
+      </div>
+      <p class="paymentText">
+        Fully secured payment gateways by trusted companies
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
