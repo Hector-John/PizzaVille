@@ -60,6 +60,11 @@ a {
     transform: rotate(360deg);
   }
 }
+
+/* foodAnime */
+.foodAnime {
+  transform: none !important;
+}
 /* ----button----- */
 .btn {
   font-size: 1rem;
@@ -93,6 +98,9 @@ section {
   .logo {
     height: 5rem;
     cursor: pointer;
+  }
+  .toggle {
+    display: none;
   }
 
   ul {
@@ -274,6 +282,9 @@ section {
     height: 100%;
     position: absolute;
   }
+  [data-aos="fade-in"].aos-animate {
+    transform: none !important;
+  }
 
   .ring {
     position: absolute;
@@ -424,6 +435,7 @@ section {
     font-size: 2rem;
     border-bottom: 1px solid var(--secondary-text-color);
     width: fit-content;
+    padding-bottom: 0.2rem;
   }
   .detail {
     width: 45%;
@@ -809,6 +821,17 @@ section {
     filter: drop-shadow(0 1rem 1rem var(--box-shadow-color));
   }
 }
+.reveiwContainer.aos-animate .wrapper {
+  animation: zoom-in-up 0.5s var(--aos-delay) forwards 1;
+}
+@keyframes zoom-in-up {
+  from {
+    transform: translateX(1rem) scale(0);
+  }
+  to {
+    transform: translateX(0) scale(1);
+  }
+}
 
 /* -----faq------- */
 .faqSection {
@@ -985,10 +1008,40 @@ section {
       position: absolute;
       height: 100%;
       left: 37%;
-      transform: translateX(-50%) scale(1.1) rotate(5deg);
+      transform: translateX(-50%) scale(1.1) rotate(-5deg);
       box-shadow: 0 2.5rem 6.35rem var(--phone-app-shadow);
       border-radius: 2rem;
     }
+  }
+}
+.pulseAnime {
+  animation: pulse 2s ease-out infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+.phoneFade.aos-animate {
+  animation: phoneRotate 0.5s forwards 1;
+}
+
+@keyframes phoneRotate {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(1.1) rotate(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1) rotate(-5deg); /* Add 'deg' unit */
   }
 }
 
@@ -1150,6 +1203,7 @@ footer {
 
     img {
       height: 2rem;
+      cursor: pointer;
     }
   }
   .paymentText {
@@ -1161,8 +1215,430 @@ footer {
   }
 }
 
-
 /* ----RESPOSIVENESS---- */
-@media screen and (max-width: 940px) {
-  
+/* =====md screen---- */
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  /* ---navbar---- */
+  .navbar {
+    width: 100%;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  /* hero----- */
+  #heroSection {
+    flex-direction: column-reverse;
+    padding-bottom: 3rem;
+
+    .left {
+      width: 85%;
+    }
+  }
+  .heroRight {
+    transform: scale(0.85) translateY(4rem);
+    padding-top: 3rem;
+  }
+  .reveiwCard {
+    width: 35rem;
+    left: -25%;
+  }
+  /* ---restaurant-- */
+  .restaurant {
+    .right {
+      right: -7%;
+    }
+    .left {
+      display: none;
+    }
+
+    .section {
+      flex-direction: column;
+      width: 100%;
+      gap: 4rem;
+    }
+    .detail {
+      width: 90%;
+      margin: auto;
+      margin-top: 3rem;
+    }
+    .foodImageContainer {
+      transform: scale(0.9) translateX(-5%);
+    }
+    .restaurantContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  /* about */
+  .about {
+    flex-direction: column;
+
+    .right {
+      width: 90%;
+      margin: auto;
+      margin-top: 7rem;
+    }
+
+    .left {
+      position: relative;
+      left: -20%;
+      width: 30rem;
+      height: 30rem;
+      transform: scale(0.9);
+
+      .laura {
+        left: 40%;
+        bottom: -27%;
+      }
+      .tareeq {
+        left: 50%;
+      }
+      .grace {
+        left: 20%;
+        top: -3.5%;
+      }
+    }
+    .reveiwContainer img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .pizzapan {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(0.9);
+      left: -25%;
+      filter: drop-shadow(0 1rem 1rem var(--box-shadow-color));
+    }
+  }
+  /* faq---- */
+  .faqSection {
+    .faq {
+      width: 90%;
+    }
+    .sushi {
+      right: -10%;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+  /* ----app section--- */
+  .app {
+    .section {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+
+      .detail {
+        width: 70%;
+        margin: auto;
+        margin-top: 4rem !important;
+        .btnGroup {
+          img {
+            width: 14rem;
+          }
+        }
+      }
+    }
+
+    .imgContainer {
+      position: relative;
+      margin-bottom: 5rem !important;
+      margin: auto;
+      left: 10%;
+    }
+  }
+  /* ------banner----- */
+  .banner {
+    .bannerContainer {
+      margin: 0;
+      width: 100%;
+      h1 {
+        font-size: 3.2rem;
+      }
+      .coupon {
+        padding: 1.5rem 4rem;
+      }
+    }
+    .dishes {
+      display: none;
+    }
+  }
+  /* -----footer---- */
+  footer {
+    flex-direction: column;
+    padding: 5vw;
+    padding-bottom: 5rem;
+    gap: 2rem;
+
+    .links {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      h5 {
+        display: block;
+        min-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    .contact {
+      width: 100%;
+      gap: 1rem;
+      display: inline-block;
+
+      h5 {
+        display: block;
+        min-width: 100%;
+        margin-bottom: 2%;
+      }
+    }
+    .payment {
+      position: relative;
+      right: auto;
+    }
+    .paymentText {
+      position: relative;
+      right: auto;
+    }
+  }
+}
+
+/* -----sm screen----- */
+@media (max-width: 480px) {
+  .toggler {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      height: 0.1rem;
+      transform: translate(-50%, -50%);
+      border-radius: 1rem;
+      background: var(--secondary-color);
+      transition: 0.5s ease-out;
+
+      &:nth-child(1) {
+        top: 30%;
+      }
+      &:nth-child(3) {
+        top: 70%;
+      }
+    }
+    &.active {
+      span {
+        &:nth-child(1) {
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &:nth-child(3) {
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .Links {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--accent-color);
+    transition: 0.5s;
+    z-index: -1;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+
+    &.active {
+      height: 13rem;
+    }
+
+    .links {
+      display: block;
+
+      &:hover {
+        background-color: #fff;
+        color: var(--secondary-text-color);
+      }
+    }
+  }
+  .restaurantContainer {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  /* hero----- */
+  #heroSection {
+    gap: 5rem;
+  }
+  .heroRight {
+    position: relative;
+    transform: scale(0.65) translateX(0%);
+  }
+  .reveiwCard {
+    width: 30rem;
+    left: -15%;
+  }
+  /* ---restaurant-- */
+  .restaurant {
+    .foodImageContainer {
+      transform: scale(0.72) translateX(-15%);
+    }
+    .right {
+      right: -15%;
+      top: 25%;
+      transform: scale(0.9) rotate(30deg);
+    }
+  }
+  /* about */
+  .about {
+    .right {
+      width: 90%;
+      margin: auto;
+      padding-top: 3rem;
+    }
+
+    .left {
+      position: relative;
+      left: -50%;
+      transform: translateX(0rem);
+      margin-bottom: 5rem;
+    }
+    .reveiwContainer img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .wrapper.active .reveiwCard {
+      transform: scale(0.7);
+    }
+
+    .tareeq {
+      bottom: 53%;
+      left: 5%;
+    }
+
+    .grace {
+      display: none;
+    }
+
+    .daisy {
+      bottom: 27%;
+      left: 65%;
+    }
+
+    .taishan {
+      bottom: 1%;
+      left: 63%;
+    }
+  }
+  /* faq---- */
+  .faqSection {
+    .faq {
+      width: 100%;
+      border: 0.1rem solid var(--accent-color);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .sushi {
+    display: none;
+  }
+  /* ----app section--- */
+  .app {
+    .section {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+
+      .detail {
+        width: 95%;
+        padding: 5vw;
+      }
+    }
+
+    .imgContainer {
+      margin-bottom: 5rem !important;
+    }
+  }
+  /* ------banner----- */
+  .banner {
+    .bannerContainer {
+      h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      .coupon {
+        padding: 1.5rem 4rem;
+      }
+    }
+  }
+  /* -----footer---- */
+  footer {
+    flex-direction: column;
+    padding: 5vw;
+    padding-bottom: 5rem;
+    gap: 2rem;
+
+    .links {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      h5 {
+        display: block;
+        min-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    .contact {
+      width: 100%;
+      gap: 1rem;
+      display: inline-block;
+
+      h5 {
+        display: block;
+        min-width: 100%;
+        margin-bottom: 2%;
+      }
+    }
+    .payment {
+      position: relative;
+      right: auto;
+    }
+    .paymentText {
+      position: relative;
+      right: auto;
+    }
+  }
 }

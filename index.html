@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Itim&family=Lato:wght@300;400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -32,10 +34,10 @@
         </div>
         <div>
           <ul class="Links">
-            <li><a href="#" class="links">Menu</a></li>
-            <li><a href="#" class="links">Order</a></li>
-            <li><a href="#" class="links">Restaurants</a></li>
-            <li><a href="#" class="links">Track Order</a></li>
+            <li class="linkItems"><a href="#" class="links">Order</a></li>
+            <li class="linkItems"><a href="#" class="links">Menu</a></li>
+            <li class="linkItems"><a href="#" class="links">Restaurants</a></li>
+            <li class="linkItems"><a href="#" class="links">Track Order</a></li>
           </ul>
         </div>
         <div class="searchDiv">
@@ -50,6 +52,7 @@
             </button>
           </div>
           <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="toggler"><span></span><span></span><span></span></div>
         </div>
       </nav>
 
@@ -80,19 +83,37 @@
         </div>
 
         <div class="heroRight">
-          <div class="bgElement">
+          <div class="bgElement" data-aos="fade-in" data-aos-delay="700">
             <div class="ring"></div>
             <div class="ring"></div>
             <div class="ring"></div>
           </div>
 
           <div class="foreElement">
-            <img src="assets/hero-pizza.png" class="heroImg" />
-            <img src="assets/hero-burger.png" class="heroImg" />
-            <img src="assets/hero-biryani.png" class="heroImg" />
-
-            <div class="reveiwCard">
-              <div class="reveiwerInfo">
+            <img
+              src="assets/hero-pizza.png"
+              class="heroImg"
+              data-aos="zoom-in"
+              data-aos-delay="0"
+            />
+            <img
+              src="assets/hero-burger.png"
+              class="heroImg"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            />
+            <img
+              src="assets/hero-biryani.png"
+              class="heroImg"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            />
+            <div class="reveiwCard" data-aos="zoom-in" data-aos-delay="450">
+              <div
+                class="reveiwerInfo"
+                data-aos="zoom-out"
+                data-aos-delay="650"
+              >
                 <img src="assets/user-5.png" class="reveiwerImg" />
                 <div class="reveiwer">
                   <div class="rating">
@@ -107,7 +128,7 @@
                 </div>
               </div>
 
-              <div class="reveiwBody">
+              <div class="reveiwBody" data-aos="zoom-out" data-aos-delay="650">
                 <i class="fa-solid fa-quote-left"></i>
                 <p>
                   PizzaVille reigns supreme as the ultimate pizza joint.
@@ -123,7 +144,7 @@
 
     <!-- ------restaurant section -->
     <section class="restaurant" id="restaurant">
-      <div class="leaf right">
+      <div class="leaf right" data-aos="zoom-in-out">
         <img src="assets/leafs.png" />
       </div>
 
@@ -139,7 +160,7 @@
             ><span></span>
           </div>
 
-          <div>
+          <div class="foodAnime" data-aos="fade">
             <img src="assets/food-1.png" class="foodImg" />
             <img src="assets/food-2.png" class="foodImg" />
             <img src="assets/food-3.png" class="foodImg" />
@@ -165,7 +186,7 @@
       <h1 class="seller">Our Best Sellers</h1>
 
       <div class="restaurantContainer">
-        <div class="restaurants">
+        <div class="restaurants" data-aos="fade-up" data-aos-delay="0">
           <p class="discount">35% Off</p>
           <div class="thumbnail">
             <img src="assets/restaurant-1.png" class="restaurantImg" alt="" />
@@ -180,7 +201,7 @@
             </span>
           </div>
         </div>
-        <div class="restaurants">
+        <div class="restaurants" data-aos="fade-up" data-aos-delay="100">
           <div class="thumbnail">
             <img src="assets/restaurant-2.png" class="restaurantImg" alt="" />
           </div>
@@ -194,7 +215,7 @@
             </span>
           </div>
         </div>
-        <div class="restaurants">
+        <div class="restaurants" data-aos="fade-up" data-aos-delay="150">
           <p class="discount">50% Off</p>
           <div class="thumbnail">
             <img src="assets/restaurant-3.png" class="restaurantImg" alt="" />
@@ -209,7 +230,7 @@
             </span>
           </div>
         </div>
-        <div class="restaurants">
+        <div class="restaurants" data-aos="fade-up" data-aos-delay="200">
           <p class="discount">35% Off</p>
           <div class="thumbnail">
             <img src="assets/restaurant-4.png" class="restaurantImg" alt="" />
@@ -224,7 +245,7 @@
             </span>
           </div>
         </div>
-        <div class="restaurants">
+        <div class="restaurants" data-aos="fade-up" data-aos-delay="250">
           <div class="thumbnail">
             <img src="assets/restaurant-5.png" class="restaurantImg" alt="" />
           </div>
@@ -238,7 +259,7 @@
             </span>
           </div>
         </div>
-        <div class="restaurants">
+        <div class="restaurants" data-aos="fade-up" data-aos-delay="300">
           <p class="discount">15% Off</p>
           <div class="thumbnail">
             <img src="assets/restaurant-6.png" class="restaurantImg" alt="" />
@@ -261,11 +282,11 @@
 
     <!-- -----about  -->
     <section class="about" id="about">
-      <div class="left">
+      <div class="left" data-aos="zoom-in-out">
         <div class="circle"></div>
         <img src="assets/pizza-pan.png" alt="" class="pizzapan" />
 
-        <div class="reveiwContainer grace">
+        <div class="reveiwContainer grace" style="--aos-delay: 250ms">
           <div class="wrapper">
             <img src="assets/user-2.png" class="reveiwerImg" />
             <div class="reveiwCard">
@@ -294,7 +315,7 @@
           </div>
         </div>
 
-        <div class="reveiwContainer tareeq">
+        <div class="reveiwContainer tareeq" style="--aos-delay: 300ms">
           <div class="wrapper">
             <img src="assets/user-4.png" class="reveiwerImg" />
             <div class="reveiwCard">
@@ -316,14 +337,13 @@
                 <p>
                   I love PizzaVille! Their unique topping combinations and
                   perfect crust make for a pizza experience that’s hard to beat.
-               
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="reveiwContainer daisy">
+        <div class="reveiwContainer daisy" style="--aos-delay: 350ms">
           <div class="wrapper">
             <img src="assets/user-3.png" class="reveiwerImg" />
             <div class="reveiwCard">
@@ -352,7 +372,7 @@
           </div>
         </div>
 
-        <div class="reveiwContainer taishan">
+        <div class="reveiwContainer taishan" style="--aos-delay: 400ms">
           <div class="wrapper">
             <img src="assets/user-1.png" class="reveiwerImg" />
             <div class="reveiwCard">
@@ -381,7 +401,7 @@
           </div>
         </div>
 
-        <div class="reveiwContainer laura">
+        <div class="reveiwContainer laura" style="--aos-delay: 450ms">
           <div class="wrapper">
             <img src="assets/user-5.png" class="reveiwerImg" />
             <div class="reveiwCard">
@@ -404,7 +424,7 @@
                   PizzaVille reigns supreme as the ultimate pizza joint.
                   Consistently crispy crusts, fresh toppings, and lightning-fast
                   delivery keep me coming back for more.
-                  </p>
+                </p>
               </div>
             </div>
           </div>
@@ -461,7 +481,7 @@
     <section class="faqSection" id="faq">
       <h1>Frequently Asked Questions</h1>
 
-      <div class="faq">
+      <div class="faq" data-aos="fade-up">
         <div class="question">
           <h3>How do I order?</h3>
           <i class="fas fa-chevron-down"></i>
@@ -475,7 +495,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-aos="fade-up">
         <div class="question">
           <h3>How can I cancel my reservation?</h3>
           <i class="fas fa-chevron-down"></i>
@@ -488,7 +508,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-aos="fade-up">
         <div class="question">
           <h3>How can I change the delivery address after order placement?</h3>
           <i class="fas fa-chevron-down"></i>
@@ -502,7 +522,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-aos="fade-up">
         <div class="question">
           <h3>My payment is declining. What should I do?</h3>
           <i class="fas fa-chevron-down"></i>
@@ -516,7 +536,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-aos="fade-up">
         <div class="question">
           <h3>How can I contact my delivery person?</h3>
           <i class="fas fa-chevron-down"></i>
@@ -559,21 +579,36 @@
 
         <!-- image container -->
         <div class="imgContainer">
-          <div class="pulse">
-            <div class="circle"></div>
+          <div class="pulse" data-aos="zoom-in-up">
+            <div class="circle pulseAnime"></div>
             <div class="circle"></div>
           </div>
 
-          <img src="assets/leafs.png" class="leaf left" alt="" />
-          <img src="assets/leafleft.png" class="leaf right" alt="" />
+          <img
+            src="assets/leafs.png"
+            class="leaf left"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          />
+          <img
+            src="assets/leafleft.png"
+            class="leaf right"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          />
 
-          <img src="assets/app.png" class="phone" alt="" />
+          <img
+            src="assets/app.png"
+            class="phone"
+            data-aos="phoneFade"
+            data-aos-delay="200"
+          />
         </div>
       </div>
     </div>
 
     <!-- ----banner--- -->
-    <div class="banner">
+    <div class="banner" data-aos="fade-left">
       <div class="bannerContainer">
         <h1>Get 20% off on your first order</h1>
         <p>Use this code during checkout</p>
@@ -630,8 +665,8 @@
       <div class="links contact">
         <h5>Contact Us</h5>
         <p>Our main restaurant is located on Street 231, KEN</p>
-        <a href="mailto:example@example.com">hakheem67@gmail.com</a>
-        <a href="tel:+1234567890">+00 7694431222</a>
+        <a href="mailto:hakheem67@gmail.com">hakheem67@gmail.com</a>
+        <a href="tel:+254738353757">+00 7694431222</a>
       </div>
 
       <div class="payment">
@@ -647,6 +682,7 @@
       </p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
